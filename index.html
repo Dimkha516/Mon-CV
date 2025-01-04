@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV - Cheikh Ahmadou Bamba Mbow</title>
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
-      rel="stylesheet"/>
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 
       <style>
         /* Ajout de styles personnalisés pour les barres de progression */
@@ -56,11 +56,12 @@
         <div class="text-center md:text-left">
           <h1 class="text-2xl font-bold">CHEIKH AHMADOU BAMBA MBOW</h1>
           <ul class="mt-2 space-y-1">
-            <li>🌍 Rufisque</li>
-            <li>📞 781645527</li>
-            <li>🏠 Rufisque / Cité Tacko Rufisque</li>
-            <li>🧑 Homme</li>
-            <li>🌐 Sénégalaise</li>
+            <li>🌍 Sénégal</li>
+            <li>🏠 Rufisque / Cité Tacko</li>
+            <li>📞 +221 781114327</li>
+            <li>📧 dimkha516@gmail.com</li>
+           
+           <!--<li>🌐 Sénégal</li>-->
           </ul>
           
         </div>
@@ -341,6 +342,7 @@
     <script>
     
       // Mode sombre
+      /*
       const darkModeToggle = document.getElementById("darkModeToggle");
       const body = document.body;
       const cvContent = document.getElementById("cv-content");
@@ -361,31 +363,34 @@
           });
         }
       });
+      */
 
       // Téléchargement PDF
-      document.getElementById("downloadPDF").addEventListener("click", () => {
-        const element = document.getElementById("cv-content");
-        const options = {
-          margin: 1,
-          filename: "CV_Cheikh_Ahmadou_Bamba_Mbow.pdf",
-          image: { type: "jpeg", quality: 0.98 },
-          html2canvas: { scale: 2 },
-          jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
-        };
+      // Téléchargement PDF
+document.getElementById("downloadPDF").addEventListener("click", () => {
+  // On sélectionne le contenu du CV au lieu du bouton
+  const element = document.getElementById("cv-content"); // Changé ici
+  const options = {
+      margin: 1,
+      filename: "CV_Cheikh_Ahmadou_Bamba_Mbow.pdf",
+      image: { type: "jpeg", quality: 0.98 },
+      html2canvas: { scale: 2 },
+      jsPDF: { unit: "mm", format: "a4", orientation: "portrait" }
+  };
 
-        // Temporairement masquer les boutons pour le PDF
-        const buttons = document.querySelectorAll("button");
-        buttons.forEach((btn) => (btn.style.display = "none"));
+  // Temporairement masquer les boutons pour le PDF
+  const buttons = document.querySelectorAll("button");
+  buttons.forEach(btn => btn.style.display = "none");
 
-        html2pdf()
-          .set(options)
-          .from(element)
-          .save()
-          .then(() => {
-            // Réafficher les boutons après la génération
-            buttons.forEach((btn) => (btn.style.display = "block"));
-          });
+  html2pdf()
+      .set(options)
+      .from(element)
+      .save()
+      .then(() => {
+          // Réafficher les boutons après la génération
+          buttons.forEach(btn => btn.style.display = "block");
       });
+});
 
       // Animer les barres de compétences au chargement
       document.addEventListener("DOMContentLoaded", animateSkillBars);
