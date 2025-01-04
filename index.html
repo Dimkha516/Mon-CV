@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV - Cheikh Ahmadou Bamba Mbow</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      rel="stylesheet"/>
+
+      <style>
+        /* Ajout de styles personnalisés pour les barres de progression */
+        .progress-container {
+            width: 100%;
+            background-color: #4B5563; /* bg-gray-600 */
+            border-radius: 9999px; 
+            height: 0.5rem;
+        }
+        
+        .progress-bar {
+            height: 100%;
+            border-radius: 9999px;
+            background-color: #99F6E4; /* bg-teal-200 */
+            transition: width 1s ease-in-out;
+        }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Bouton Mode Sombre -->
+    <button
+      id="darkModeToggle"
+      class="fixed top-4 right-4 bg-gray-800 text-white p-2 rounded-full z-10 hover:bg-gray-700"
+    >
+      🌓
+      <button
+      id="downloadPDF"
+      class="fixed top-4 right-16 bg-teal-600 text-orange-500 px-4 py-2 rounded-lg z-10 hover:bg-teal-700"
+    >
+      📥 Télécharger CV
+    </button>
+    
+
+
+    <div id="cv-content" class="container mx-auto p-4 md:p-8 max-w-5xl">
+      <!-- Le reste du contenu HTML reste le même jusqu'aux barres de compétences -->
+      <header
+        class="bg-teal-200 rounded-lg p-6 flex flex-col md:flex-row items-center gap-4 transition-colors duration-300"
+      >
+        <div class="w-32 h-32 overflow-hidden rounded-full">
+          <img
+            src="/BambaODC.png"
+            alt="Photo de profil"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="text-center md:text-left">
+          <h1 class="text-2xl font-bold">CHEIKH AHMADOU BAMBA MBOW</h1>
+          <ul class="mt-2 space-y-1">
+            <li>🌍 Rufisque</li>
+            <li>📞 781645527</li>
+            <li>🏠 Rufisque / Cité Tacko Rufisque</li>
+            <li>🧑 Homme</li>
+            <li>🌐 Sénégalaise</li>
+          </ul>
+          
+        </div>
+      </header>
+
+      <!-- Contenu principal -->
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Colonne de gauche -->
+        <div
+          class="bg-gray-800 text-white p-6 rounded-lg transition-colors duration-300"
+        >
+        <section>
+          <h2 class="text-xl font-bold mb-4">COMPÉTENCES</h2>
+          <div class="space-y-4">
+            <div class="skill-container">
+              <p>Html/Css</p>
+              <div class="progress-container">
+                  <div class="progress-bar" style="width: 80%"></div>
+              </div>
+              <span class="text-xs text-gray-400">80%</span>
+          </div>
+          <div class="skill-container">
+            <p>JavaScript</p>
+            <div class="progress-container">
+                <div class="progress-bar" style="width: 75%"></div>
+            </div>
+            <span class="text-xs text-gray-400">75%</span>
+        </div>
+        <div class="skill-container">
+          <p>Typescript</p>
+          <div class="progress-container">
+              <div class="progress-bar" style="width: 70%"></div>
+          </div>
+          <span class="text-xs text-gray-400">70%</span>
+      </div>
+      <div class="skill-container">
+        <p>React</p>
+        <div class="progress-container">
+            <div class="progress-bar" style="width: 70%"></div>
+        </div>
+        <span class="text-xs text-gray-400">70%</span>
+    </div>
+    <div class="skill-container">
+      <p>Node.js</p>
+      <div class="progress-container">
+          <div class="progress-bar" style="width: 80%"></div>
+      </div>
+      <span class="text-xs text-gray-400">80%</span>
+  </div>
+  <div class="skill-container">
+    <p>Laravel</p>
+    <div class="progress-container">
+        <div class="progress-bar" style="width: 70%"></div>
+    </div>
+    <span class="text-xs text-gray-400">70%</span>
+</div>
+<div class="skill-container">
+  <p>Angular</p>
+  <div class="progress-container">
+      <div class="progress-bar" style="width: 40%"></div>
+  </div>
+  <span class="text-xs text-gray-400">40%</span>
+</div>
+<div class="skill-container">
+  <p>Python</p>
+  <div class="progress-container">
+      <div class="progress-bar" style="width: 40%"></div>
+  </div>
+  <span class="text-xs text-gray-400">40%</span>
+</div>
+<div class="skill-container">
+  <p>Flutter</p>
+  <div class="progress-container">
+      <div class="progress-bar" style="width: 60%"></div>
+  </div>
+  <span class="text-xs text-gray-400">60%</span>
+</div>
+<div class="skill-container">
+  <p>Dart</p>
+  <div class="progress-container">
+      <div class="progress-bar" style="width: 50%"></div>
+  </div>
+  <span class="text-xs text-gray-400">50%</span>
+</div>
+          </div>
+      </section>
+
+          <!-- Langues avec pourcentages -->
+          <section class="mt-8">
+            <h2 class="text-xl font-bold mb-4">LANGUES</h2>
+            <div class="space-y-4">
+              <div class="skill-container">
+                <p>Français</p>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 90%"></div>
+                </div>
+                <span class="text-xs text-gray-400">90%</span>
+            </div>
+            <div class="skill-container">
+              <p>Anglais</p>
+              <div class="progress-container">
+                  <div class="progress-bar" style="width: 65%"></div>
+              </div> 
+              <span class="text-xs text-gray-400">65%</span>
+          </div>
+            </div>
+        </section>
+
+          <section class="mt-8">
+            <h2 class="text-xl font-bold mb-4">CENTRES D'INTÉRÊT</h2>
+            <ul class="space-y-2">
+              <li>• Jeux vidéo</li>
+              <li>• Course de Motos</li>
+            </ul>
+          </section>
+          <!-- Le reste du contenu reste identique -->
+        </div>
+
+        <!-- Colonne de droite -->
+        <!-- Colonne de droite -->
+        <div class="md:col-span-2">
+          <section class="bg-white p-6 rounded-lg mb-6">
+            <h2 class="bg-blue-200 text-xl font-bold mb-4 text-teal-600">FORMATION</h2>
+            <div class="border-l-2 border-teal-200 pl-4">
+              <h3 class="font-bold">Développeur Web Mobile</h3>
+              <p class="text-gray-600">
+                École du Code Sonatel Academy (ECSA), Dakar
+              </p>
+              <p class="text-sm text-gray-500">de févr. 2023 à nov. 2024</p>
+              <p class="mt-2">
+                Formation intensive de développement web-mobile à la Sonatel
+                Academy. La formation est assortie d'un certificat de
+                qualification professionnelle avec le profile de développeur
+                full stack
+              </p>
+            </div>
+          </section>
+
+          <section class="bg-white p-6 rounded-lg">
+            <h2 class="bg-blue-200 text-xl font-bold mb-4 text-teal-600">
+              EXPÉRIENCE PROFESSIONNELLE
+            </h2>
+            <div class="space-y-6">
+              <div class="border-l-2 border-teal-200 pl-4">
+                <h3 class="font-bold">Développeur Backend</h3>
+                <p class="text-gray-600">SONATEL (OFMS)</p>
+                <p class="text-sm text-gray-500">de décembre 2024 à ce jour</p>
+                <p class="text-gray-600">
+                  Création et maintenance d'applications / Logiciels internes
+                </p>
+              </div>
+
+              <div class="border-l-2 border-teal-200 pl-4">
+                <h3 class="font-bold">Développeur Full stack</h3>
+                <p class="text-gray-600">
+                  Application de gestion de cargaisons
+                </p>
+                <p class="text-sm text-gray-500">de mars 2024 à avr. 2024</p>
+                <p class="mt-2">
+                  Solution destinées aux entreprises de groupage de colis.
+                </p>
+                <div class="mt-2">
+                  <p class="font-semibold">Technologies:</p>
+                  <ul class="list-disc ml-6">
+                    <li>Html/Css</li>
+                    <li>PHP</li>
+                    <li>Typescript</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="border-l-2 border-teal-200 pl-4">
+                <h3 class="font-bold">Développeur Full stack</h3>
+                <p class="text-gray-600">Application Web de gestion d'école</p>
+                <p class="text-sm text-gray-500">Mai 2024</p>
+                <p class="mt-2">
+                  Application web de gestion d'apprenants. L'application est
+                  destinée aux établissements scolaires pour une gestion
+                  automatisée des apprenants et référentiels
+                </p>
+                <div class="mt-2">
+                  <p class="font-semibold">Technologies:</p>
+                  <ul class="list-disc ml-6">
+                    <li>Html/Css</li>
+                    <li>PHP</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="border-l-2 border-teal-200 pl-4">
+                <h3 class="font-bold">Développeur Full stack</h3>
+                <p class="text-gray-600">Application Web de gestion dettes</p>
+                <p class="text-sm text-gray-500">de juillet 2024 à Août 2024</p>
+                <p class="mt-2">
+                  L'application est destinée aux espaces de commerce. L'objectif
+                  est de permettre aux gérants d'avoir un suivi des dettes
+                  clients
+                </p>
+                <div class="mt-2">
+                  <p class="font-semibold">Technologies:</p>
+                  <ul class="list-disc ml-6">
+                    <li>Laravel</li>
+                    <li>Mysql</li>
+                    <li>Prisma</li>
+                    <li>Déploiement sur Render avec Docker</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="border-l-2 border-teal-200 pl-4">
+                <h3 class="font-bold">Développeur Full stack</h3>
+                <p class="text-gray-600">
+                  Application Web de réseau social DigitTail
+                </p>
+                <p class="text-sm text-gray-500">de oct. 2024 à nov. 2024</p>
+                <p class="mt-2">
+                  Application web sous forme de réseau social destinée aux
+                  tailleurs et leurs clients. A travers l'application, les
+                  tailleurs peuvent publier leurs models pour permettre aux
+                  potentiels clients de faire leurs commandes. En plus, les
+                  utilisateurs peuvent discuter, poster des statuts
+                </p>
+                <div class="mt-2">
+                  <p class="font-semibold">Technologies:</p>
+                  <ul class="list-disc ml-6">
+                    <li>NodeJS</li>
+                    <li>MongoDB</li>
+                    <li>ExpressJs</li>
+                    <li>React</li>
+                    <li>TailwindCSS</li>
+                    <li>Déploiement sur Render avec Docker</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="border-l-2 border-teal-200 pl-4">
+                <h3 class="font-bold">Développeur Mobile</h3>
+                <p class="text-gray-600">
+                  Application mobile de transfert d'argent
+                </p>
+                <p class="mt-2">
+                  Application mobile de transfert d'argent pour permettre aux
+                  différents utilisateurs inscrits d'effectuer des transferts
+                  B2B, des paiements et achats
+                </p>
+                <div class="mt-2">
+                  <p class="font-semibold">Technologies:</p>
+                  <ul class="list-disc ml-6">
+                    <li>Dart</li>
+                    <li>Flutter</li>
+                    <li>Laravel</li>
+                    <li>Firebase</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Répéter pour chaque expérience -->
+            </div>
+          </section>
+
+          <section class="bg-white p-6 rounded-lg">
+            <h2 class="bg-blue-200 text-xl font-bold mb-4 text-teal-600">Références</h2>
+            <section>
+                <h3 class="font-bold">Mrs Birane Bailo Wane</h3>
+                <p class="text-gray-600">Sonatel Academy, Dakar</p>
+                <p class="text-gray-600">+221 77 766 95 95</p>
+            </section>
+            <section>
+                <h3 class="font-bold">Mrs Aly Tall Niang</h3>
+                <p class="text-gray-600">Sonatel Academy, Dakar</p>
+                <p class="text-gray-600">+221 77 182 54 1</p>
+            </section>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <script>
+    
+      // Mode sombre
+      const darkModeToggle = document.getElementById("darkModeToggle");
+      const body = document.body;
+      const cvContent = document.getElementById("cv-content");
+
+      darkModeToggle.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+        if (body.classList.contains("dark-mode")) {
+          body.style.backgroundColor = "#1a1a1a";
+          cvContent.querySelectorAll(".bg-white").forEach((el) => {
+            el.style.backgroundColor = "#2d2d2d";
+            el.style.color = "#ffffff";
+          });
+        } else {
+          body.style.backgroundColor = "";
+          cvContent.querySelectorAll(".bg-white").forEach((el) => {
+            el.style.backgroundColor = "";
+            el.style.color = "";
+          });
+        }
+      });
+
+      // Téléchargement PDF
+      document.getElementById("downloadPDF").addEventListener("click", () => {
+        const element = document.getElementById("cv-content");
+        const options = {
+          margin: 1,
+          filename: "CV_Cheikh_Ahmadou_Bamba_Mbow.pdf",
+          image: { type: "jpeg", quality: 0.98 },
+          html2canvas: { scale: 2 },
+          jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
+        };
+
+        // Temporairement masquer les boutons pour le PDF
+        const buttons = document.querySelectorAll("button");
+        buttons.forEach((btn) => (btn.style.display = "none"));
+
+        html2pdf()
+          .set(options)
+          .from(element)
+          .save()
+          .then(() => {
+            // Réafficher les boutons après la génération
+            buttons.forEach((btn) => (btn.style.display = "block"));
+          });
+      });
+
+      // Animer les barres de compétences au chargement
+      document.addEventListener("DOMContentLoaded", animateSkillBars);
+
+      // Observer pour animer les barres lors du défilement
+      entries.forEach((entry) => {
+          const observer = new IntersectionObserver((entries) => {
+          if (entry.isIntersecting) {
+            animateSkillBars();
+          }
+        });
+      });
+
+      //document.querySelectorAll(".skill-container").forEach((container) => {
+       // observer.observe(container);
+      //});
+    </script>
+  </body>
+</html>
